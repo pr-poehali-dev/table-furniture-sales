@@ -160,7 +160,7 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-16">
           <div className="max-w-2xl">
             <p className="font-body text-xs tracking-[0.3em] uppercase mb-6" style={{ color: "var(--gold)", animation: "fadeInUp 0.8s 0.2s both" }}>
-              Мебельная студия · Москва · С 2008 года
+              Авторская мебель · Бузулук · С 2008 года
             </p>
             <h1 className="font-display text-6xl md:text-8xl font-light leading-[0.9] mb-8" style={{ animation: "fadeInUp 0.8s 0.4s both" }}>
               Мебель,<br /><em className="italic" style={{ color: "var(--gold)" }}>созданная</em><br />для вечности
@@ -445,7 +445,7 @@ export default function Index() {
       <footer className="py-10" style={{ backgroundColor: "var(--dark)", borderTop: "1px solid rgba(201,168,76,0.15)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>ЭкоДрев</div>
-          <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев Studio. Все права защищены.</p>
+          <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев, Бузулук. Все права защищены.</p>
           <div className="flex items-center gap-6">
             {["ВКонтакте", "Telegram", "Pinterest"].map((s) => (
               <button key={s} className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
