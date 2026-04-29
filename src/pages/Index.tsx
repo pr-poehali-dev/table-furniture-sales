@@ -367,7 +367,7 @@ export default function Index() {
                   {[
                     { icon: "MapPin", label: "Адрес", val: "г. Бузулук, ул. Суворова, 64, ТЦ «Сигнал»" },
                     { icon: "Phone", label: "Телефон", val: "8-922-807-00-17, 8-922-547-05-21" },
-                    { icon: "Mail", label: "Email", val: "hello@maison-furniture.ru" },
+                    { icon: "Mail", label: "Email", val: "decabrina_sveta@mail.ru" },
                     { icon: "Clock", label: "Часы работы", val: "Пн–Сб: 10:00–20:00" },
                   ].map((c) => (
                     <div key={c.label} className="flex items-start gap-4">
