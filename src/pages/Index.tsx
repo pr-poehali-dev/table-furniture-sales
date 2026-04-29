@@ -15,12 +15,14 @@ const navItems = [
 ];
 
 const catalogItems = [
-  { id: 1, name: "Стол «Монако»", category: "stoly", material: "Массив дуба, латунь", price: "от 185 000 ₽", image: HERO_IMG, tag: "Новинка" },
-  { id: 2, name: "Шкаф «Версаль»", category: "korpusnaya", material: "Орех, золотая фурнитура", price: "от 320 000 ₽", image: GALLERY_IMG1, tag: "Хит" },
-  { id: 3, name: "Стол «Флоренция»", category: "stoly", material: "Мрамор, нержавеющая сталь", price: "от 240 000 ₽", image: GALLERY_IMG2, tag: null },
-  { id: 4, name: "Гардероб «Империал»", category: "korpusnaya", material: "Венге, латунные ручки", price: "от 450 000 ₽", image: HERO_IMG, tag: "Премиум" },
-  { id: 5, name: "Обеденный стол «Рим»", category: "stoly", material: "Каменный шпон, массив", price: "от 195 000 ₽", image: GALLERY_IMG1, tag: null },
-  { id: 6, name: "Комод «Барселона»", category: "korpusnaya", material: "Ясень, бронзовая фурнитура", price: "от 280 000 ₽", image: GALLERY_IMG2, tag: "Эксклюзив" },
+  { id: 1, name: "Столы", category: "stoly", material: "Натуральное дерево, премиум качество", price: "от 20 000 ₽", image: HERO_IMG, tag: "Хит" },
+  { id: 2, name: "Столики", category: "stoly", material: "Натуральное дерево, авторский дизайн", price: "от 11 000 ₽", image: GALLERY_IMG2, tag: null },
+  { id: 3, name: "Кухни", category: "korpusnaya", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Премиум" },
+  { id: 4, name: "Шкафы", category: "korpusnaya", material: "Натуральное дерево, премиум качество", price: "Цена по запросу", image: HERO_IMG, tag: null },
+  { id: 5, name: "Детская мебель", category: "detskaya", material: "Экологичное дерево, безопасные материалы", price: "от 9 000 ₽", image: GALLERY_IMG2, tag: "Эко" },
+  { id: 6, name: "Мебель для ванной", category: "korpusnaya", material: "Влагостойкие материалы, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: null },
+  { id: 7, name: "Мебель для офисов", category: "office", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: HERO_IMG, tag: null },
+  { id: 8, name: "Мебель для ресторанов", category: "office", material: "Авторский дизайн, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Эксклюзив" },
 ];
 
 const services = [
@@ -214,7 +216,7 @@ export default function Index() {
                 <h2 className="font-display text-5xl md:text-6xl font-light">Каталог мебели</h2>
               </div>
               <div className="flex gap-3 flex-wrap">
-                {[["all", "Все"], ["stoly", "Столы"], ["korpusnaya", "Корпусная"]].map(([val, label]) => (
+                {[["all", "Все"], ["stoly", "Столы"], ["korpusnaya", "Корпусная"], ["detskaya", "Детская"], ["office", "Офис и ресторан"]].map(([val, label]) => (
                   <button key={val} onClick={() => setCatalogFilter(val)}
                     className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 transition-all duration-200"
                     style={{
