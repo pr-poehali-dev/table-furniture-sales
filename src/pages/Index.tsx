@@ -160,7 +160,7 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-16">
           <div className="max-w-2xl">
             <p className="font-body text-xs tracking-[0.3em] uppercase mb-6" style={{ color: "var(--gold)", animation: "fadeInUp 0.8s 0.2s both" }}>
-              Авторская мебель · Бузулук · С 2008 года
+              Авторская мебель · Бузулук · С 2000 года
             </p>
             <h1 className="font-display text-6xl md:text-8xl font-light leading-[0.9] mb-8" style={{ animation: "fadeInUp 0.8s 0.4s both" }}>
               Мебель,<br /><em className="italic" style={{ color: "var(--gold)" }}>созданная</em><br />для вечности
@@ -194,7 +194,7 @@ export default function Index() {
 
         <div className="absolute bottom-0 left-0 right-0 z-10" style={{ animation: "fadeInUp 0.8s 1.0s both" }}>
           <div className="max-w-7xl mx-auto px-6 pb-10 flex gap-12">
-            {[["18+", "лет опыта"], ["340+", "проектов"], ["98%", "довольных клиентов"]].map(([num, label]) => (
+            {[["25+", "лет опыта"], ["340+", "проектов"], ["98%", "довольных клиентов"]].map(([num, label]) => (
               <div key={label}>
                 <p className="font-display text-3xl font-light" style={{ color: "var(--gold)" }}>{num}</p>
                 <p className="font-body text-xs tracking-[0.1em] uppercase" style={{ color: "rgba(240,232,213,0.5)" }}>{label}</p>
