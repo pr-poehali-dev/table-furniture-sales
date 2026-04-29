@@ -167,7 +167,7 @@ export default function Index() {
             </h1>
             <div className="gold-line w-24 mb-8" style={{ animation: "fadeInUp 0.8s 0.55s both" }} />
             <p className="font-body text-sm leading-relaxed mb-10 max-w-md" style={{ color: "rgba(240,232,213,0.68)", animation: "fadeInUp 0.8s 0.65s both" }}>
-              Авторские коллекции из редких пород дерева, мрамора и металла. Каждое изделие — это история, рассказанная мастером.
+              Авторские коллекции из натуральных пород дерева. Каждое изделие — это история, рассказанная мастером.
             </p>
             <div className="flex flex-col sm:flex-row gap-4" style={{ animation: "fadeInUp 0.8s 0.8s both" }}>
               <button
