@@ -106,7 +106,7 @@ export default function Index() {
       {/* NAVBAR */}
       <header className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: "rgba(15,12,8,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(201,168,76,0.15)" }}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-          <div className="font-display text-2xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>MAISON</div>
+          <div className="font-display text-2xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>ЭкоДрев</div>
 
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
@@ -326,7 +326,7 @@ export default function Index() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
               <div>
                 <p className="font-body text-xs tracking-[0.25em] uppercase mb-3" style={{ color: "var(--gold)" }}>Знания</p>
-                <h2 className="font-display text-5xl md:text-6xl font-light">Журнал MAISON</h2>
+                <h2 className="font-display text-5xl md:text-6xl font-light">Журнал ЭкоДрев</h2>
               </div>
               <button className="font-body text-xs tracking-[0.15em] uppercase flex items-center gap-2 self-start md:self-end" style={{ color: "var(--gold)" }}>
                 Все статьи <Icon name="ArrowRight" size={14} />
@@ -444,8 +444,8 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-10" style={{ backgroundColor: "var(--dark)", borderTop: "1px solid rgba(201,168,76,0.15)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="font-display text-xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>MAISON</div>
-          <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 MAISON Studio. Все права защищены.</p>
+          <div className="font-display text-xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>ЭкоДрев</div>
+          <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев Studio. Все права защищены.</p>
           <div className="flex items-center gap-6">
             {["ВКонтакте", "Telegram", "Pinterest"].map((s) => (
               <button key={s} className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
