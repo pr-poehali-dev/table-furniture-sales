@@ -365,8 +365,8 @@ export default function Index() {
                 <div className="gold-line w-20 mb-8" />
                 <div className="space-y-6">
                   {[
-                    { icon: "MapPin", label: "Адрес", val: "Москва, Тверская ул., 12" },
-                    { icon: "Phone", label: "Телефон", val: "+7 (495) 000-00-00" },
+                    { icon: "MapPin", label: "Адрес", val: "г. Бузулук, ул. Суворова, 64, ТЦ «Сигнал»" },
+                    { icon: "Phone", label: "Телефон", val: "8-922-807-00-17, 8-922-547-05-21" },
                     { icon: "Mail", label: "Email", val: "hello@maison-furniture.ru" },
                     { icon: "Clock", label: "Часы работы", val: "Пн–Сб: 10:00–20:00" },
                   ].map((c) => (
