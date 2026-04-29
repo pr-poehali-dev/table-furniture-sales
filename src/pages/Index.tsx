@@ -4,6 +4,8 @@ import Icon from "@/components/ui/icon";
 const HERO_IMG = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/a6e923ee-b5b5-4f63-98be-5e054280b501.jpg";
 const GALLERY_IMG1 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/ca601452-70eb-402e-af48-8e4c57c758fa.jpg";
 const GALLERY_IMG2 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/55e66285-1780-4050-84eb-841d674e9f70.jpg";
+const LETНИЙ_POLDEN_1 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/436bd90b-75c4-4c32-85fa-e9e408648c0d.jpg";
+const LETНИЙ_POLDEN_2 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/d59057b3-32bf-4d8b-ac20-23ad1886a10f.jpg";
 
 const navItems = [
   { label: "Главная", section: "hero" },
@@ -16,7 +18,7 @@ const navItems = [
 
 const catalogItems = [
   { id: 1, name: "Столы", category: "stoly", material: "Натуральное дерево, премиум качество", price: "от 20 000 ₽", image: HERO_IMG, tag: "Хит", desc: "" },
-  { id: 2, name: "Кофейный столик «Летний полдень»", category: "stoly", material: "Дуб (порода на ваш выбор) · Коллекция «Мелодии лета»", price: "от 11 000 ₽", image: GALLERY_IMG2, tag: "Премиум", desc: "Лаконичный дизайн, который впишется в любой интерьер. Дарит ощущение лёгкости бытия — удобно для двух человек." },
+  { id: 2, name: "Кофейный столик «Летний полдень»", category: "stoly", material: "Дуб (порода на ваш выбор) · Коллекция «Мелодии лета»", price: "от 11 000 ₽", image: LETНИЙ_POLDEN_1, image2: LETНИЙ_POLDEN_2, tag: "Премиум", desc: "Лаконичный дизайн, который впишется в любой интерьер. Дарит ощущение лёгкости бытия — удобно для двух человек." },
   { id: 3, name: "Кухни", category: "korpusnaya", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Премиум" },
   { id: 4, name: "Шкафы", category: "korpusnaya", material: "Натуральное дерево, премиум качество", price: "Цена по запросу", image: HERO_IMG, tag: null },
   { id: 5, name: "Детская мебель", category: "detskaya", material: "Экологичное дерево, безопасные материалы", price: "от 9 000 ₽", image: GALLERY_IMG2, tag: "Эко" },
@@ -237,7 +239,8 @@ export default function Index() {
               <AnimatedSection key={item.id}>
                 <div className="luxury-card group cursor-pointer overflow-hidden" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.1)" }}>
                   <div className="relative overflow-hidden" style={{ height: "260px" }}>
-                    <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 absolute inset-0" style={{ opacity: item.image2 ? 1 : 1 }} />
+                    {item.image2 && <img src={item.image2} alt={item.name} className="w-full h-full object-cover absolute inset-0 transition-opacity duration-700 opacity-0 group-hover:opacity-100" />}
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,12,8,0.8) 0%, transparent 60%)" }} />
                     {item.tag && (
                       <span className="absolute top-4 left-4 font-body text-xs tracking-[0.15em] uppercase px-3 py-1" style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>
