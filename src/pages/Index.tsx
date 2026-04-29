@@ -15,8 +15,8 @@ const navItems = [
 ];
 
 const catalogItems = [
-  { id: 1, name: "Столы", category: "stoly", material: "Натуральное дерево, премиум качество", price: "от 20 000 ₽", image: HERO_IMG, tag: "Хит" },
-  { id: 2, name: "Столики", category: "stoly", material: "Натуральное дерево, авторский дизайн", price: "от 11 000 ₽", image: GALLERY_IMG2, tag: null },
+  { id: 1, name: "Столы", category: "stoly", material: "Натуральное дерево, премиум качество", price: "от 20 000 ₽", image: HERO_IMG, tag: "Хит", desc: "" },
+  { id: 2, name: "Кофейный столик «Летний полдень»", category: "stoly", material: "Дуб (порода на ваш выбор) · Коллекция «Мелодии лета»", price: "от 11 000 ₽", image: GALLERY_IMG2, tag: "Премиум", desc: "Лаконичный дизайн, который впишется в любой интерьер. Дарит ощущение лёгкости бытия — удобно для двух человек." },
   { id: 3, name: "Кухни", category: "korpusnaya", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Премиум" },
   { id: 4, name: "Шкафы", category: "korpusnaya", material: "Натуральное дерево, премиум качество", price: "Цена по запросу", image: HERO_IMG, tag: null },
   { id: 5, name: "Детская мебель", category: "detskaya", material: "Экологичное дерево, безопасные материалы", price: "от 9 000 ₽", image: GALLERY_IMG2, tag: "Эко" },
@@ -247,7 +247,8 @@ export default function Index() {
                   </div>
                   <div className="p-6">
                     <h3 className="font-display text-2xl font-light mb-1">{item.name}</h3>
-                    <p className="font-body text-xs tracking-wide mb-4" style={{ color: "rgba(240,232,213,0.5)" }}>{item.material}</p>
+                    <p className="font-body text-xs tracking-wide mb-3" style={{ color: "rgba(240,232,213,0.5)" }}>{item.material}</p>
+                    {item.desc && <p className="font-body text-xs leading-relaxed mb-4" style={{ color: "rgba(240,232,213,0.65)" }}>{item.desc}</p>}
                     <div className="flex items-center justify-between">
                       <span className="font-body text-sm" style={{ color: "var(--gold)" }}>{item.price}</span>
                       <span className="font-body text-xs tracking-[0.1em] uppercase flex items-center gap-1.5" style={{ color: "rgba(240,232,213,0.5)" }}>
