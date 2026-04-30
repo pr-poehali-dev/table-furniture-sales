@@ -210,6 +210,61 @@ export default function Index() {
         </div>
       </section>
 
+      {/* MATERIALS */}
+      <section id="materials" className="py-24" style={{ backgroundColor: "var(--dark)" }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <p className="font-body text-xs tracking-[0.25em] uppercase mb-3" style={{ color: "var(--gold)" }}>Из чего мы делаем</p>
+              <h2 className="font-display text-5xl md:text-6xl font-light mb-4">Мебель из лучших материалов</h2>
+              <div className="gold-line w-24 mx-auto" />
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <AnimatedSection>
+              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
+                  <Icon name="Trees" size={22} style={{ color: "var(--gold)" }} />
+                </div>
+                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>Натуральные породы дерева</h3>
+                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
+                  Используем массив дуба, ясеня, ореха, сосны и других ценных пород. Каждая доска тщательно отбирается вручную — только однородная текстура, без сучков и дефектов.
+                </p>
+                <ul className="flex flex-col gap-3">
+                  {["Дуб — прочность и благородная текстура", "Ясень — лёгкость и выразительный рисунок", "Орех — тёплый тон, элитный сегмент", "Сосна — доступность и природный аромат"].map((item) => (
+                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
+                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
+                  <Icon name="Layers" size={22} style={{ color: "var(--gold)" }} />
+                </div>
+                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>МДФ</h3>
+                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
+                  МДФ — современный плитный материал высокой плотности. Отлично подходит для фасадов, декоративных элементов и корпусной мебели. Идеальная поверхность под покраску и шпон.
+                </p>
+                <ul className="flex flex-col gap-3">
+                  {["Однородная структура без деформаций", "Гладкая поверхность — идеально под покраску", "Устойчивость к влаге (влагостойкий МДФ)", "Доступная цена при высоком качестве"].map((item) => (
+                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
+                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* CATALOG */}
       <section id="catalog" className="py-24" style={{ backgroundColor: "var(--dark-mid)" }}>
         <div className="max-w-7xl mx-auto px-6">
