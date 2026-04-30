@@ -290,7 +290,7 @@ export default function Index() {
                 <h2 className="font-display text-5xl md:text-6xl font-light">Каталог мебели</h2>
               </div>
               <div className="flex gap-3 flex-wrap">
-                {[["all", "Все"], ["stoly", "Столы"], ["korpusnaya", "Корпусная"], ["detskaya", "Детская"], ["office", "Офис и ресторан"]].map(([val, label]) => (
+                {[["all", "Все"], ["stoly", "Столы"], ["korpusnaya", "Корпусная"], ["detskaya", "Детская"], ["office", "Офис и библиотека"]].map(([val, label]) => (
                   <button key={val} onClick={() => setCatalogFilter(val)}
                     className="font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 transition-all duration-200"
                     style={{
