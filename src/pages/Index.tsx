@@ -19,7 +19,7 @@ const navItems = [
 ];
 
 const catalogItems = [
-  { id: 11, name: "Стол «Лунная соната»", category: "stoly", material: "Карагач, МДФ · Коллекция 2026", price: "40 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/134f3a3e-8c60-4cb4-aa9f-a8b03d5f1407.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/f58ba5a4-916a-4e47-83b1-6ec263b1cbc3.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/52222ba4-da1a-464c-8751-b98574194b21.jpg"], tag: "Новинка", desc: "Дизайнерский круглый стол «Лунная соната» из коллекции 2026 года. Любите необычное? Тогда этот стол для вас! Подстолье — игра сочетания цветов и материалов: светлая сторона — угловая трапеция карагач; тёмная — трапеция с геометрическими узорами, МДФ. Круглый стол — потому что дома нет главных и второстепенных. Идеален для 4 человек. «Лунная соната» — воплощение теплоты и домашнего уюта, ведь так приятно собираться вокруг стола! Отправляем по РФ любыми транспортными компаниями. Проконсультируем и подберём стол, который идеально впишется в интерьер!" },
+  { id: 11, name: "Стол «Лунная соната»", category: "stoly", material: "Карагач, МДФ · Коллекция 2026", price: "40 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/134f3a3e-8c60-4cb4-aa9f-a8b03d5f1407.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/f58ba5a4-916a-4e47-83b1-6ec263b1cbc3.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/52222ba4-da1a-464c-8751-b98574194b21.jpg"], video: "https://vk.com/video_ext.php?oid=-230847857&id=456239049&hd=2", tag: "Новинка", desc: "Дизайнерский круглый стол «Лунная соната» из коллекции 2026 года. Любите необычное? Тогда этот стол для вас! Подстолье — игра сочетания цветов и материалов: светлая сторона — угловая трапеция карагач; тёмная — трапеция с геометрическими узорами, МДФ. Круглый стол — потому что дома нет главных и второстепенных. Идеален для 4 человек. «Лунная соната» — воплощение теплоты и домашнего уюта, ведь так приятно собираться вокруг стола! Отправляем по РФ любыми транспортными компаниями. Проконсультируем и подберём стол, который идеально впишется в интерьер!" },
   { id: 1, name: "Стол «Листопад»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Осенняя рапсодия»", price: "от 20 000 ₽", images: [LISTOPAD_1, LISTOPAD_2], tag: "Хит", desc: "Стол «Листопад» из коллекции «Осенняя рапсодия». Элегантный, словно парящий в воздухе треугольный столик на трёх ножках манит попить за ним чашечку чая или заняться творчеством. Размер — 160×100 см, высота 76 см. Премиальное качество. Гарантия до 10 лет. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами." },
   { id: 9, name: "Столик «Начало осени»", category: "stoly", material: "Дуб, берёза (порода дерева на ваш выбор) · Коллекция «Осенняя рапсодия»", price: "от 13 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/fa79cbdf-f6d3-40f6-9265-5af41b7acdd2.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/234ef46b-3ccf-49b9-995a-073929588b83.jpg"], tag: "Премиум", desc: "Столик «Начало осени» из коллекции «Осенняя рапсодия». Маленький круглый столик многовариативен: и как журнальный, и как детский. Премиальное качество. Дуб, берёза — порода дерева на ваш выбор. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам." },
   { id: 10, name: "Столик «На заре»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Мелодии лета»", price: "от 24 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/cf11c47f-d10b-41cc-bc96-2c7b4ee653c1.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6ca13ba2-38a2-4301-a8e9-19466c26926f.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/3cb57985-9d16-4b01-bcd7-df20b34832e3.jpg"], tag: "Премиум", desc: "Столик «На заре» из коллекции «Мелодии лета». Очаровательный круглый кофейный столик — чем не повод побаловать себя чашечкой ароматного напитка на заре… Круглый столик как для двух человек, так и для четырёх. Здесь никто не сидит «с краю». Премиальное качество. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами. Доставим по РФ любыми транспортными компаниями." },
@@ -83,12 +83,12 @@ export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
   const [formSent, setFormSent] = useState(false);
-  const [modal, setModal] = useState<{ item: typeof catalogItems[0]; photoIndex: number } | null>(null);
+  const [modal, setModal] = useState<{ item: typeof catalogItems[0]; photoIndex: number; showVideo: boolean } | null>(null);
 
-  const openModal = (item: typeof catalogItems[0], photoIndex = 0) => setModal({ item, photoIndex });
+  const openModal = (item: typeof catalogItems[0], photoIndex = 0) => setModal({ item, photoIndex, showVideo: false });
   const closeModal = () => setModal(null);
-  const modalPrev = () => setModal((m) => m ? { ...m, photoIndex: (m.photoIndex - 1 + m.item.images.length) % m.item.images.length } : null);
-  const modalNext = () => setModal((m) => m ? { ...m, photoIndex: (m.photoIndex + 1) % m.item.images.length } : null);
+  const modalPrev = () => setModal((m) => m ? { ...m, showVideo: false, photoIndex: (m.photoIndex - 1 + m.item.images.length) % m.item.images.length } : null);
+  const modalNext = () => setModal((m) => m ? { ...m, showVideo: false, photoIndex: (m.photoIndex + 1) % m.item.images.length } : null);
 
   const scrollTo = (section: string) => {
     const el = document.getElementById(section);
@@ -528,8 +528,12 @@ export default function Index() {
             </button>
 
             <div className="relative" style={{ height: "420px" }}>
-              <img src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
-              {modal.item.images.length > 1 && (
+              {modal.showVideo && modal.item.video ? (
+                <iframe src={modal.item.video} className="w-full h-full" allow="autoplay; encrypted-media; fullscreen" allowFullScreen frameBorder="0" />
+              ) : (
+                <img src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
+              )}
+              {!modal.showVideo && modal.item.images.length > 1 && (
                 <>
                   <button onClick={modalPrev} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center transition-colors" style={{ backgroundColor: "rgba(15,12,8,0.7)", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
                     <Icon name="ChevronLeft" size={20} />
@@ -537,26 +541,26 @@ export default function Index() {
                   <button onClick={modalNext} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center transition-colors" style={{ backgroundColor: "rgba(15,12,8,0.7)", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
                     <Icon name="ChevronRight" size={20} />
                   </button>
-                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-                    {modal.item.images.map((_, i) => (
-                      <button key={i} onClick={() => setModal((m) => m ? { ...m, photoIndex: i } : null)}
-                        className="w-2 h-2 rounded-full transition-all"
-                        style={{ backgroundColor: i === modal.photoIndex ? "var(--gold)" : "rgba(240,232,213,0.35)" }} />
-                    ))}
-                  </div>
                 </>
               )}
             </div>
 
-            {modal.item.images.length > 1 && (
+            {(modal.item.images.length > 1 || modal.item.video) && (
               <div className="flex gap-2 px-6 pt-4 overflow-x-auto">
                 {modal.item.images.map((src, i) => (
-                  <button key={i} onClick={() => setModal((m) => m ? { ...m, photoIndex: i } : null)}
+                  <button key={i} onClick={() => setModal((m) => m ? { ...m, photoIndex: i, showVideo: false } : null)}
                     className="flex-shrink-0 w-16 h-16 overflow-hidden transition-all"
-                    style={{ border: i === modal.photoIndex ? "2px solid var(--gold)" : "2px solid transparent", opacity: i === modal.photoIndex ? 1 : 0.5 }}>
+                    style={{ border: !modal.showVideo && i === modal.photoIndex ? "2px solid var(--gold)" : "2px solid transparent", opacity: !modal.showVideo && i === modal.photoIndex ? 1 : 0.5 }}>
                     <img src={src} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}
+                {modal.item.video && (
+                  <button onClick={() => setModal((m) => m ? { ...m, showVideo: true } : null)}
+                    className="flex-shrink-0 w-16 h-16 flex items-center justify-center transition-all"
+                    style={{ border: modal.showVideo ? "2px solid var(--gold)" : "2px solid transparent", backgroundColor: "rgba(15,12,8,0.6)", opacity: modal.showVideo ? 1 : 0.6 }}>
+                    <Icon name="Play" size={22} style={{ color: "var(--gold)" }} />
+                  </button>
+                )}
               </div>
             )}
 
