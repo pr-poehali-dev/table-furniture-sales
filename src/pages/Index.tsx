@@ -19,16 +19,16 @@ const navItems = [
 ];
 
 const catalogItems = [
-  { id: 1, name: "Стол «Листопад»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Осенняя рапсодия»", price: "от 20 000 ₽", image: LISTOPAD_1, image2: LISTOPAD_2, tag: "Хит", desc: "Стол «Листопад» из коллекции «Осенняя рапсодия». Элегантный, словно парящий в воздухе треугольный столик на трёх ножках манит попить за ним чашечку чая или заняться творчеством. Размер — 160×100 см, высота 76 см. Премиальное качество. Гарантия до 10 лет. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами." },
-  { id: 9, name: "Столик «Начало осени»", category: "stoly", material: "Дуб, берёза (порода дерева на ваш выбор) · Коллекция «Осенняя рапсодия»", price: "от 13 000 ₽", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/fa79cbdf-f6d3-40f6-9265-5af41b7acdd2.jpg", image2: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/234ef46b-3ccf-49b9-995a-073929588b83.jpg", tag: "Премиум", desc: "Столик «Начало осени» из коллекции «Осенняя рапсодия». Маленький круглый столик многовариативен: и как журнальный, и как детский. Премиальное качество. Дуб, берёза — порода дерева на ваш выбор. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам." },
-  { id: 10, name: "Столик «На заре»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Мелодии лета»", price: "от 24 000 ₽", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/cf11c47f-d10b-41cc-bc96-2c7b4ee653c1.jpg", image2: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6ca13ba2-38a2-4301-a8e9-19466c26926f.jpg", tag: "Премиум", desc: "Столик «На заре» из коллекции «Мелодии лета». Очаровательный круглый кофейный столик — чем не повод побаловать себя чашечкой ароматного напитка на заре… Круглый столик как для двух человек, так и для четырёх. Здесь никто не сидит «с краю». Премиальное качество. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами. Доставим по РФ любыми транспортными компаниями." },
-  { id: 2, name: "Кофейный столик «Летний полдень»", category: "stoly", material: "Дуб (порода на ваш выбор) · Коллекция «Мелодии лета»", price: "от 11 000 ₽", image: LETНИЙ_POLDEN_1, image2: LETНИЙ_POLDEN_2, tag: "Премиум", desc: "Лаконичный дизайн, который впишется в любой интерьер. Дарит ощущение лёгкости бытия — удобно для двух человек." },
-  { id: 3, name: "Кухни", category: "korpusnaya", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Премиум" },
-  { id: 4, name: "Шкафы", category: "korpusnaya", material: "Натуральное дерево, премиум качество", price: "Цена по запросу", image: HERO_IMG, tag: null },
-  { id: 5, name: "Детская мебель", category: "detskaya", material: "Экологичное дерево, безопасные материалы", price: "от 9 000 ₽", image: GALLERY_IMG2, tag: "Эко" },
-  { id: 6, name: "Мебель для ванной", category: "korpusnaya", material: "Влагостойкие материалы, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: null },
-  { id: 7, name: "Мебель для офисов", category: "office", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", image: HERO_IMG, tag: null },
-  { id: 8, name: "Мебель для ресторанов", category: "office", material: "Авторский дизайн, любой стиль", price: "Цена по запросу", image: GALLERY_IMG1, tag: "Эксклюзив" },
+  { id: 1, name: "Стол «Листопад»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Осенняя рапсодия»", price: "от 20 000 ₽", images: [LISTOPAD_1, LISTOPAD_2], tag: "Хит", desc: "Стол «Листопад» из коллекции «Осенняя рапсодия». Элегантный, словно парящий в воздухе треугольный столик на трёх ножках манит попить за ним чашечку чая или заняться творчеством. Размер — 160×100 см, высота 76 см. Премиальное качество. Гарантия до 10 лет. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами." },
+  { id: 9, name: "Столик «Начало осени»", category: "stoly", material: "Дуб, берёза (порода дерева на ваш выбор) · Коллекция «Осенняя рапсодия»", price: "от 13 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/fa79cbdf-f6d3-40f6-9265-5af41b7acdd2.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/234ef46b-3ccf-49b9-995a-073929588b83.jpg"], tag: "Премиум", desc: "Столик «Начало осени» из коллекции «Осенняя рапсодия». Маленький круглый столик многовариативен: и как журнальный, и как детский. Премиальное качество. Дуб, берёза — порода дерева на ваш выбор. Отправляем по РФ любыми транспортными компаниями. Изготовим на заказ по вашим размерам." },
+  { id: 10, name: "Столик «На заре»", category: "stoly", material: "Порода дерева на ваш выбор · Коллекция «Мелодии лета»", price: "от 24 000 ₽", images: ["https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/cf11c47f-d10b-41cc-bc96-2c7b4ee653c1.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6ca13ba2-38a2-4301-a8e9-19466c26926f.jpg", "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/3cb57985-9d16-4b01-bcd7-df20b34832e3.jpg"], tag: "Премиум", desc: "Столик «На заре» из коллекции «Мелодии лета». Очаровательный круглый кофейный столик — чем не повод побаловать себя чашечкой ароматного напитка на заре… Круглый столик как для двух человек, так и для четырёх. Здесь никто не сидит «с краю». Премиальное качество. Изготовим на заказ по вашим размерам из породы дерева, выбранной вами. Доставим по РФ любыми транспортными компаниями." },
+  { id: 2, name: "Кофейный столик «Летний полдень»", category: "stoly", material: "Дуб (порода на ваш выбор) · Коллекция «Мелодии лета»", price: "от 11 000 ₽", images: [LETНИЙ_POLDEN_1, LETНИЙ_POLDEN_2], tag: "Премиум", desc: "Лаконичный дизайн, который впишется в любой интерьер. Дарит ощущение лёгкости бытия — удобно для двух человек." },
+  { id: 3, name: "Кухни", category: "korpusnaya", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", images: [GALLERY_IMG1], tag: "Премиум" },
+  { id: 4, name: "Шкафы", category: "korpusnaya", material: "Натуральное дерево, премиум качество", price: "Цена по запросу", images: [HERO_IMG], tag: null },
+  { id: 5, name: "Детская мебель", category: "detskaya", material: "Экологичное дерево, безопасные материалы", price: "от 9 000 ₽", images: [GALLERY_IMG2], tag: "Эко" },
+  { id: 6, name: "Мебель для ванной", category: "korpusnaya", material: "Влагостойкие материалы, любой стиль", price: "Цена по запросу", images: [GALLERY_IMG1], tag: null },
+  { id: 7, name: "Мебель для офисов", category: "office", material: "Натуральное дерево, любой стиль", price: "Цена по запросу", images: [HERO_IMG], tag: null },
+  { id: 8, name: "Мебель для ресторанов", category: "office", material: "Авторский дизайн, любой стиль", price: "Цена по запросу", images: [GALLERY_IMG1], tag: "Эксклюзив" },
 ];
 
 const services = [
@@ -82,6 +82,12 @@ export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
   const [formSent, setFormSent] = useState(false);
+  const [modal, setModal] = useState<{ item: typeof catalogItems[0]; photoIndex: number } | null>(null);
+
+  const openModal = (item: typeof catalogItems[0], photoIndex = 0) => setModal({ item, photoIndex });
+  const closeModal = () => setModal(null);
+  const modalPrev = () => setModal((m) => m ? { ...m, photoIndex: (m.photoIndex - 1 + m.item.images.length) % m.item.images.length } : null);
+  const modalNext = () => setModal((m) => m ? { ...m, photoIndex: (m.photoIndex + 1) % m.item.images.length } : null);
 
   const scrollTo = (section: string) => {
     const el = document.getElementById(section);
@@ -296,15 +302,21 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((item) => (
               <AnimatedSection key={item.id}>
-                <div className="luxury-card group cursor-pointer overflow-hidden" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.1)" }}>
+                <div className="luxury-card group cursor-pointer overflow-hidden" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.1)" }} onClick={() => openModal(item, 0)}>
                   <div className="relative overflow-hidden" style={{ height: "260px" }}>
-                    <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 absolute inset-0" style={{ opacity: item.image2 ? 1 : 1 }} />
-                    {item.image2 && <img src={item.image2} alt={item.name} className="w-full h-full object-cover absolute inset-0 transition-opacity duration-700 opacity-0 group-hover:opacity-100" />}
+                    <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 absolute inset-0" />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,12,8,0.8) 0%, transparent 60%)" }} />
                     {item.tag && (
                       <span className="absolute top-4 left-4 font-body text-xs tracking-[0.15em] uppercase px-3 py-1" style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>
                         {item.tag}
                       </span>
+                    )}
+                    {item.images.length > 1 && (
+                      <div className="absolute bottom-3 right-4 flex items-center gap-1">
+                        {item.images.map((_, i) => (
+                          <span key={i} className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: i === 0 ? "var(--gold)" : "rgba(240,232,213,0.4)" }} />
+                        ))}
+                      </div>
                     )}
                   </div>
                   <div className="p-6">
@@ -314,7 +326,7 @@ export default function Index() {
                     <div className="flex items-center justify-between">
                       <span className="font-body text-sm" style={{ color: "var(--gold)" }}>{item.price}</span>
                       <span className="font-body text-xs tracking-[0.1em] uppercase flex items-center gap-1.5" style={{ color: "rgba(240,232,213,0.5)" }}>
-                        Подробнее <Icon name="ArrowRight" size={13} />
+                        {item.images.length > 1 ? `${item.images.length} фото` : "Подробнее"} <Icon name="ArrowRight" size={13} />
                       </span>
                     </div>
                   </div>
@@ -505,6 +517,67 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* MODAL */}
+      {modal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" style={{ backgroundColor: "rgba(15,12,8,0.92)" }} onClick={closeModal}>
+          <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.2)" }} onClick={(e) => e.stopPropagation()}>
+            <button onClick={closeModal} className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center transition-colors" style={{ border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
+              <Icon name="X" size={18} />
+            </button>
+
+            <div className="relative" style={{ height: "420px" }}>
+              <img src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
+              {modal.item.images.length > 1 && (
+                <>
+                  <button onClick={modalPrev} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center transition-colors" style={{ backgroundColor: "rgba(15,12,8,0.7)", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
+                    <Icon name="ChevronLeft" size={20} />
+                  </button>
+                  <button onClick={modalNext} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center transition-colors" style={{ backgroundColor: "rgba(15,12,8,0.7)", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
+                    <Icon name="ChevronRight" size={20} />
+                  </button>
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                    {modal.item.images.map((_, i) => (
+                      <button key={i} onClick={() => setModal((m) => m ? { ...m, photoIndex: i } : null)}
+                        className="w-2 h-2 rounded-full transition-all"
+                        style={{ backgroundColor: i === modal.photoIndex ? "var(--gold)" : "rgba(240,232,213,0.35)" }} />
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+
+            {modal.item.images.length > 1 && (
+              <div className="flex gap-2 px-6 pt-4 overflow-x-auto">
+                {modal.item.images.map((src, i) => (
+                  <button key={i} onClick={() => setModal((m) => m ? { ...m, photoIndex: i } : null)}
+                    className="flex-shrink-0 w-16 h-16 overflow-hidden transition-all"
+                    style={{ border: i === modal.photoIndex ? "2px solid var(--gold)" : "2px solid transparent", opacity: i === modal.photoIndex ? 1 : 0.5 }}>
+                    <img src={src} alt="" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="p-6">
+              {modal.item.tag && (
+                <span className="inline-block font-body text-xs tracking-[0.15em] uppercase px-3 py-1 mb-4" style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>{modal.item.tag}</span>
+              )}
+              <h2 className="font-display text-3xl font-light mb-2">{modal.item.name}</h2>
+              <p className="font-body text-xs tracking-wide mb-4" style={{ color: "rgba(240,232,213,0.5)" }}>{modal.item.material}</p>
+              {modal.item.desc && <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.7)" }}>{modal.item.desc}</p>}
+              <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid rgba(201,168,76,0.15)" }}>
+                <span className="font-display text-2xl font-light" style={{ color: "var(--gold)" }}>{modal.item.price}</span>
+                <button onClick={() => { closeModal(); document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" }); }}
+                  className="font-body text-xs tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
+                  style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>
+                  Заказать консультацию
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* FOOTER */}
       <footer className="py-10" style={{ backgroundColor: "var(--dark)", borderTop: "1px solid rgba(201,168,76,0.15)" }}>
