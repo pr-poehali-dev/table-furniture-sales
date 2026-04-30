@@ -39,7 +39,7 @@ const catalogItems = [
 ];
 
 const services = [
-  { icon: "Palette", title: "Дизайн-проект", desc: "Полная разработка концепции интерьера от эскиза до 3D-визуализации с авторским надзором.", price: "от 3 000 ₽/м²" },
+  { icon: "Palette", title: "Дизайн-проект", desc: "Полная разработка концепции от эскиза до 3D-визуализации с авторским надзором бесплатно.", price: "Бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8d680a66-ab03-43d6-8edf-63893c1a1165.jpeg" },
   { icon: "MessageSquare", title: "Консультация", desc: "Индивидуальная встреча с ведущим дизайнером студии для подбора мебели и материалов.", price: "Бесплатно" },
   { icon: "Truck", title: "Доставка", desc: "Бережная упаковка и доставка белой перчаткой в любую точку России.", price: "Рассчитывается" },
   { icon: "Wrench", title: "Сборка и монтаж", desc: "Профессиональный монтаж вашей мебели командой опытных специалистов студии.", price: "от 5 000 ₽" },
@@ -358,9 +358,15 @@ export default function Index() {
             {services.map((s) => (
               <AnimatedSection key={s.title}>
                 <div className="luxury-card p-8 h-full group cursor-pointer" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.1)" }}>
-                  <div className="mb-6 w-12 h-12 flex items-center justify-center" style={{ border: "1px solid var(--gold-dark)" }}>
-                    <Icon name={s.icon} fallback="Star" size={20} style={{ color: "var(--gold)" }} />
-                  </div>
+                  {s.image ? (
+                    <div className="mb-6 flex items-center justify-center h-16">
+                      <img src={s.image} alt={s.title} className="max-h-16 max-w-full object-contain" />
+                    </div>
+                  ) : (
+                    <div className="mb-6 w-12 h-12 flex items-center justify-center" style={{ border: "1px solid var(--gold-dark)" }}>
+                      <Icon name={s.icon} fallback="Star" size={20} style={{ color: "var(--gold)" }} />
+                    </div>
+                  )}
                   <h3 className="font-display text-2xl font-light mb-3">{s.title}</h3>
                   <p className="font-body text-xs leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.55)" }}>{s.desc}</p>
                   <p className="font-body text-sm font-medium" style={{ color: "var(--gold)" }}>{s.price}</p>
