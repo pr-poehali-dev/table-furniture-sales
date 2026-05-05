@@ -436,6 +436,27 @@ export default function Index() {
                 </ul>
               </div>
             </AnimatedSection>
+
+
+            <AnimatedSection>
+              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
+                  <Icon name="PanelTop" size={22} style={{ color: "var(--gold)" }} />
+                </div>
+                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>ЛДСП премиум-класса Ламарти</h3>
+                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
+                  Ламинированная древесностружечная плита премиум-класса с трёхслойной структурой и плотностью, приближенной к МДФ.
+                </p>
+                <ul className="flex flex-col gap-3">
+                  {["Экологичность — ламинированная плита премиум-класса", "Качество — трёхслойные, плотность близка к МДФ", "Эстетичность — различные варианты структур и тиснений"].map((item) => (
+                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
+                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
