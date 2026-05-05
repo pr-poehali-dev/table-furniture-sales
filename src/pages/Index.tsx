@@ -52,6 +52,7 @@ const projects = [
   { title: "Современная кухня «Окси»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/442670dc-5080-4b64-a289-b4e73da28baa.png", style: "Современная", desc: "" },
   { title: "Современная кухня «Модерн Стайл»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b9d51ceb-c7be-4a04-a20d-a5b299e35175.jpg", style: "Современная", desc: "" },
   { title: "Мебель для детей и подростков", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/2c0b3b01-dceb-4352-97f3-88299b53a1de.jpg", style: "Детская", desc: "" },
+  { title: "Современная кухня «Василиса»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/27b7d3b8-80c8-4a93-9ac6-d2758034fb58.jpg", style: "Современная", desc: "" },
 ];
 
 const articles = [
