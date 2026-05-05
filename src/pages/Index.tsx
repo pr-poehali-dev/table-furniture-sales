@@ -41,7 +41,7 @@ const catalogItems = [
 const services = [
   { icon: "Palette", title: "Дизайн-проект", desc: "Полная разработка концепции от эскиза до 3D-визуализации с авторским надзором бесплатно.", price: "Бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8d680a66-ab03-43d6-8edf-63893c1a1165.jpeg" },
   { icon: "MessageSquare", title: "Консультация", desc: "Индивидуальная встреча с ведущим дизайнером студии для подбора мебели и материалов.", price: "Бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8332e325-027c-4018-8482-f42b79005668.jpeg" },
-  { icon: "Truck", title: "Доставка", desc: "По городу Бузулук — бесплатно. По Оренбургской области и другим регионам РФ рассчитывается индивидуально.", price: "Бузулук — бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8332e325-027c-4018-8482-f42b79005668.jpeg" },
+  { icon: "Truck", title: "Доставка", desc: "Бережная упаковка и доставка белой перчаткой в любую точку России. Доставка по городу Бузулук бесплатно. По Оренбургской области и другим регионам РФ рассчитывается.", price: "Бузулук — бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8332e325-027c-4018-8482-f42b79005668.jpeg" },
   { icon: "Wrench", title: "Сборка и монтаж", desc: "Профессиональный монтаж вашей мебели командой опытных специалистов студии.", price: "Бесплатно", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/8332e325-027c-4018-8482-f42b79005668.jpeg" },
 ];
 
