@@ -50,6 +50,7 @@ const projects = [
   { title: "Классическая кухня «Прованс»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/63de36b2-46c7-4759-8793-f64e7a1544aa.jpg", style: "Прованс", desc: "" },
   { title: "Классическая кухня «Нике Авория»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/dbcb4b78-b2d3-4b00-9b74-537b93dab3f8.jpg", style: "Классика", desc: "" },
   { title: "Современная кухня «Окси»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/442670dc-5080-4b64-a289-b4e73da28baa.png", style: "Современная", desc: "" },
+  { title: "Современная кухня «Модерн Стайл»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b9d51ceb-c7be-4a04-a20d-a5b299e35175.jpg", style: "Современная", desc: "" },
 ];
 
 const articles = [
