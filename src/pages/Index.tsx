@@ -47,9 +47,9 @@ const services = [
 ];
 
 const projects = [
-  { title: "Резиденция «Тверская»", location: "Москва", area: "420 м²", image: GALLERY_IMG1, style: "Классика" },
-  { title: "Апартаменты «Невский»", location: "Санкт-Петербург", area: "210 м²", image: GALLERY_IMG2, style: "Ар-деко" },
-  { title: "Вилла «Азур»", location: "Сочи", area: "680 м²", image: HERO_IMG, style: "Современная классика" },
+  { title: "Классическая кухня «Прованс»", location: "Бузулук", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/63de36b2-46c7-4759-8793-f64e7a1544aa.jpg", style: "Прованс", desc: "Гармоничное сочетание простоты, романтизма, нежности и шика. Неповторимая атмосфера французской глубинки. Фасады серого цвета, витражи с гравировкой, деревянная столешница тёмного коричневого цвета, качественная фурнитура и продуманная система хранения." },
+  { title: "Резиденция «Тверская»", location: "Москва", area: "420 м²", image: GALLERY_IMG1, style: "Классика", desc: "" },
+  { title: "Апартаменты «Невский»", location: "Санкт-Петербург", area: "210 м²", image: GALLERY_IMG2, style: "Ар-деко", desc: "" },
 ];
 
 const articles = [
@@ -401,7 +401,8 @@ export default function Index() {
                   <div className="absolute bottom-0 left-0 right-0 p-8">
                     <span className="font-body text-xs tracking-[0.15em] uppercase px-3 py-1 mb-4 inline-block" style={{ border: "1px solid rgba(201,168,76,0.5)", color: "var(--gold)" }}>{p.style}</span>
                     <h3 className="font-display text-2xl font-light mb-1">{p.title}</h3>
-                    <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.5)" }}>{p.location} · {p.area}</p>
+                    <p className="font-body text-xs mb-2" style={{ color: "rgba(240,232,213,0.5)" }}>{p.location}{p.area ? ` · ${p.area}` : ""}</p>
+                    {p.desc && <p className="font-body text-xs leading-relaxed" style={{ color: "rgba(240,232,213,0.7)" }}>{p.desc}</p>}
                   </div>
                 </div>
               </AnimatedSection>
