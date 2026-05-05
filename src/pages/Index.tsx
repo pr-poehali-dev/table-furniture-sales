@@ -48,7 +48,7 @@ const services = [
 
 const projects = [
   { title: "Классическая кухня «Прованс»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/63de36b2-46c7-4759-8793-f64e7a1544aa.jpg", style: "Прованс", desc: "" },
-  { title: "Резиденция «Тверская»", location: "Москва", area: "420 м²", image: GALLERY_IMG1, style: "Классика", desc: "" },
+  { title: "Классическая кухня «Нике Авория»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/dbcb4b78-b2d3-4b00-9b74-537b93dab3f8.jpg", style: "Классика", desc: "" },
   { title: "Апартаменты «Невский»", location: "Санкт-Петербург", area: "210 м²", image: GALLERY_IMG2, style: "Ар-деко", desc: "" },
 ];
 
