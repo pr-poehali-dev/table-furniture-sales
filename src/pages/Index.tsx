@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMG = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/a6e923ee-b5b5-4f63-98be-5e054280b501.jpg";
@@ -254,9 +254,33 @@ export default function Index() {
   const [formSent, setFormSent] = useState(false);
   const [modal, setModal] = useState<{ item: typeof catalogItems[0]; photoIndex: number; showVideo: boolean } | null>(null);
   const [articleModal, setArticleModal] = useState<typeof articles[0] | null>(null);
+  const [shareCopied, setShareCopied] = useState(false);
 
-  const openModal = (item: typeof catalogItems[0], photoIndex = 0) => setModal({ item, photoIndex, showVideo: false });
-  const closeModal = () => setModal(null);
+  const openModal = useCallback((item: typeof catalogItems[0], photoIndex = 0) => {
+    setModal({ item, photoIndex, showVideo: false });
+    const url = new URL(window.location.href);
+    url.searchParams.set("item", String(item.id));
+    window.history.replaceState(null, "", url.toString());
+  }, []);
+
+  const closeModal = () => {
+    setModal(null);
+    const url = new URL(window.location.href);
+    url.searchParams.delete("item");
+    window.history.replaceState(null, "", url.toString());
+  };
+
+  const handleShare = () => {
+    const url = new URL(window.location.href);
+    if (modal) url.searchParams.set("item", String(modal.item.id));
+    if (navigator.share) {
+      navigator.share({ title: modal?.item.name, url: url.toString() });
+    } else {
+      navigator.clipboard.writeText(url.toString());
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 2000);
+    }
+  };
   const modalPrev = () => setModal((m) => m ? { ...m, showVideo: false, photoIndex: (m.photoIndex - 1 + m.item.images.length) % m.item.images.length } : null);
   const modalNext = () => setModal((m) => m ? { ...m, showVideo: false, photoIndex: (m.photoIndex + 1) % m.item.images.length } : null);
 
@@ -265,6 +289,15 @@ export default function Index() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const itemId = params.get("item");
+    if (itemId) {
+      const found = catalogItems.find((c) => String(c.id) === itemId);
+      if (found) openModal(found, 0);
+    }
+  }, [openModal]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -771,11 +804,23 @@ export default function Index() {
               {modal.item.desc && <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.7)" }}>{modal.item.desc}</p>}
               <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid rgba(201,168,76,0.15)" }}>
                 <span className="font-display text-2xl font-light" style={{ color: "var(--gold)" }}>{modal.item.price}</span>
-                <button onClick={() => { closeModal(); document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" }); }}
-                  className="font-body text-xs tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
-                  style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>
-                  Заказать консультацию
-                </button>
+                <div className="flex items-center gap-3">
+                  <button onClick={handleShare} title="Поделиться ссылкой"
+                    className="w-10 h-10 flex items-center justify-center transition-all duration-300 relative"
+                    style={{ border: "1px solid rgba(201,168,76,0.4)", color: "var(--gold)" }}>
+                    <Icon name={shareCopied ? "Check" : "Share2"} size={16} />
+                    {shareCopied && (
+                      <span className="absolute -top-8 left-1/2 -translate-x-1/2 font-body text-xs px-2 py-1 whitespace-nowrap" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
+                        Скопировано
+                      </span>
+                    )}
+                  </button>
+                  <button onClick={() => { closeModal(); document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" }); }}
+                    className="font-body text-xs tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
+                    style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>
+                    Заказать консультацию
+                  </button>
+                </div>
               </div>
             </div>
           </div>
