@@ -802,6 +802,23 @@ export default function Index() {
               <h2 className="font-display text-3xl font-light mb-2">{modal.item.name}</h2>
               <p className="font-body text-xs tracking-wide mb-4" style={{ color: "rgba(240,232,213,0.5)" }}>{modal.item.material}</p>
               {modal.item.desc && <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.7)" }}>{modal.item.desc}</p>}
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a href="tel:+79228199288" className="flex items-center gap-2 font-body text-xs tracking-wide px-4 py-2 transition-all duration-300"
+                  style={{ border: "1px solid rgba(201,168,76,0.35)", color: "var(--gold)" }}>
+                  <Icon name="Phone" size={13} />
+                  8-922-819-92-88
+                </a>
+                <a href="tel:+79228070017" className="flex items-center gap-2 font-body text-xs tracking-wide px-4 py-2 transition-all duration-300"
+                  style={{ border: "1px solid rgba(201,168,76,0.35)", color: "var(--gold)" }}>
+                  <Icon name="Phone" size={13} />
+                  8-922-807-00-17
+                </a>
+                <a href="tel:+79325485363" className="flex items-center gap-2 font-body text-xs tracking-wide px-4 py-2 transition-all duration-300"
+                  style={{ border: "1px solid rgba(201,168,76,0.35)", color: "var(--gold)" }}>
+                  <Icon name="Phone" size={13} />
+                  8-932-548-53-63
+                </a>
+              </div>
               <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid rgba(201,168,76,0.15)" }}>
                 <span className="font-display text-2xl font-light" style={{ color: "var(--gold)" }}>{modal.item.price}</span>
                 <div className="flex items-center gap-3">
