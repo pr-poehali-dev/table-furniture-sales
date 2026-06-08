@@ -131,7 +131,13 @@ export default function ContactsSection() {
           <div className="font-display text-xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>ЭкоДрев</div>
           <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев, Бузулук. Все права защищены.</p>
           <div className="flex items-center gap-6">
-            {["ВКонтакте", "Telegram", "Pinterest"].map((s) => (
+            <a href="https://vk.com/ekodrevbuzuluk" target="_blank" rel="noopener noreferrer"
+              className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
+              style={{ color: "rgba(240,232,213,0.4)" }}
+              onMouseEnter={e => (e.target as HTMLAnchorElement).style.color = "var(--gold)"}
+              onMouseLeave={e => (e.target as HTMLAnchorElement).style.color = "rgba(240,232,213,0.4)"}
+            >ВКонтакте</a>
+            {["Telegram", "Pinterest"].map((s) => (
               <button key={s} className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
                 style={{ color: "rgba(240,232,213,0.4)" }}
                 onMouseEnter={e => (e.target as HTMLButtonElement).style.color = "var(--gold)"}
