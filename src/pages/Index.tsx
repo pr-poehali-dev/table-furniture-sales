@@ -31,6 +31,7 @@ const projects = [
   { title: "Стол «Мелодия лофта»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6842dff2-3ab3-4b93-b3d8-f3baf607a639.png", style: "Лофт", desc: "" },
   { title: "Журнальный столик «Юнона»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b4b74c5c-91cd-447b-95ae-6b7e667c13d6.jpg", style: "Классика", desc: "" },
   { title: "Стол «Архитектоника»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/ae6cb983-971e-47cb-ac97-2c89c148819a.jpg", style: "Лофт", desc: "" },
+  { title: "Стол классический «Серафима»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/78394aa7-6416-4b2b-9e04-63c5f85e87eb.jpg", style: "Классика", desc: "" },
 ];
 
 function useScrollAnimation() {
