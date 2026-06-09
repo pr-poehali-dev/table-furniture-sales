@@ -5,7 +5,7 @@ import CatalogSection, { CatalogModal, catalogItems, type CatalogItem } from "@/
 import BlogSection, { ArticleModal, type Article } from "@/components/BlogSection";
 import ContactsSection from "@/components/ContactsSection";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/896b9488-d53a-47b5-9b06-3216210365a0.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/d6272c82-5119-42fb-97d9-f62ea911f7ce.jpg";
 const GALLERY_IMG1 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/ca601452-70eb-402e-af48-8e4c57c758fa.jpg";
 const GALLERY_IMG2 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/55e66285-1780-4050-84eb-841d674e9f70.jpg";
 
