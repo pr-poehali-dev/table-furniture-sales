@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const materialData = [
   {
     icon: "Trees",
+    image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/9f1fcc6a-ea57-4baf-a085-1fab4a3b2b43.jpg",
     title: "Натуральные породы дерева",
     short: "Используем массив дуба, ясеня, карагача, берёзы, липы. Каждая доска тщательно отбирается вручную — только однородная текстура, без сучков и дефектов.",
     items: ["Дуб — прочность и благородство текстуры", "Ясень — лёгкость и выразительный рисунок", "Карагач — тёплый тон, элитный сегмент", "Берёза — доступность и природный аромат", "Липа — эстетичность и отсутствие аллергенных смол"],
@@ -10,6 +11,7 @@ const materialData = [
   },
   {
     icon: "Layers",
+    image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/57d87536-299c-4c03-b5dd-0ea8a8c8a8bd.jpg",
     title: "МДФ",
     short: "МДФ — современный плитный материал высокой плотности. Отлично подходит для фасадов, декоративных элементов и корпусной мебели. Идеальная поверхность под покраску и шпон.",
     items: ["Однородная структура без деформаций", "Гладкая поверхность — идеально под покраску", "Устойчивость к влаге (влагостойкий МДФ)", "Доступная цена при высоком качестве"],
@@ -17,6 +19,7 @@ const materialData = [
   },
   {
     icon: "PanelTop",
+    image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/1b2e7585-f4db-416d-bc1b-6aeff90248a4.jpg",
     title: "ЛДСП премиум-класса Ламарти",
     short: "Ламинированная древесностружечная плита премиум-класса с трёхслойной структурой и плотностью, приближенной к МДФ.",
     items: ["Экологичность — ламинированная плита премиум-класса", "Качество — трёхслойные, плотность близка к МДФ", "Эстетичность — различные варианты структур и тиснений"],
@@ -29,7 +32,11 @@ function MaterialCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
       {materialData.map((mat, idx) => (
-        <div key={mat.title} className="p-10 flex flex-col" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+        <div key={mat.title} className="flex flex-col" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+          <div className="w-full h-48 overflow-hidden">
+            <img src={mat.image} alt={mat.title} className="w-full h-full object-cover" style={{ filter: "brightness(0.85)" }} />
+          </div>
+          <div className="p-10 flex flex-col flex-1">
           <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
             <Icon name={mat.icon} size={22} style={{ color: "var(--gold)" }} />
           </div>
@@ -56,6 +63,7 @@ function MaterialCards() {
               {mat.details}
             </div>
           )}
+          </div>
         </div>
       ))}
     </div>
