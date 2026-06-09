@@ -28,7 +28,7 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 }
 
 export default function ContactsSection() {
-  const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", material: "", message: "" });
   const [formSent, setFormSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -97,6 +97,21 @@ export default function ContactsSection() {
                           />
                         </div>
                       ))}
+                      <div>
+                        <label className="font-body text-xs tracking-[0.1em] uppercase block mb-2" style={{ color: "rgba(240,232,213,0.5)" }}>Интересующий материал</label>
+                        <select
+                          value={formData.material}
+                          onChange={(e) => setFormData((p) => ({ ...p, material: e.target.value }))}
+                          className="w-full font-body text-sm px-4 py-3 outline-none transition-colors duration-200"
+                          style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.2)", color: formData.material ? "var(--cream)" : "rgba(240,232,213,0.35)" }}
+                        >
+                          <option value="" disabled style={{ backgroundColor: "var(--dark-card)", color: "rgba(240,232,213,0.5)" }}>Выберите материал...</option>
+                          <option value="Натуральные породы дерева" style={{ backgroundColor: "var(--dark-card)", color: "var(--cream)" }}>Натуральные породы дерева</option>
+                          <option value="МДФ" style={{ backgroundColor: "var(--dark-card)", color: "var(--cream)" }}>МДФ</option>
+                          <option value="ЛДСП премиум-класса Ламарти" style={{ backgroundColor: "var(--dark-card)", color: "var(--cream)" }}>ЛДСП премиум-класса Ламарти</option>
+                          <option value="Не знаю, нужна помощь" style={{ backgroundColor: "var(--dark-card)", color: "var(--cream)" }}>Не знаю, нужна помощь</option>
+                        </select>
+                      </div>
                       <div>
                         <label className="font-body text-xs tracking-[0.1em] uppercase block mb-2" style={{ color: "rgba(240,232,213,0.5)" }}>Сообщение</label>
                         <textarea
