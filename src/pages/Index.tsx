@@ -26,7 +26,9 @@ const services = [
   { icon: "CreditCard", title: "Рассрочка", desc: "Ремонт несёт с собой большие траты. Это часто приводит к тому, что переезд затягивается. Зная это, мы добавили возможность покупки в рассрочку на 3 месяца без процентов и переплат.", price: "0% на 3 месяца", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/9b5dc2fb-3371-4c40-8493-e58359bc17e2.jpg" },
 ];
 
-const projects: { title: string; location: string; area: string; image: string; style: string; desc: string }[] = [];
+const projects = [
+  { title: "Стол «Элегия»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/254050d2-95ca-4817-af94-f574cb8b9383.jpg", style: "Современная", desc: "" },
+];
 
 function useScrollAnimation() {
   const ref = useRef<HTMLDivElement>(null);
