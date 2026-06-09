@@ -149,12 +149,12 @@ export function CatalogModal({ modal, setModal, closeModal }: CatalogModalProps)
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" style={{ backgroundColor: "rgba(15,12,8,0.92)" }} onClick={closeModal}>
-      <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.2)" }} onClick={(e) => e.stopPropagation()}>
-        <button onClick={closeModal} className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center transition-colors" style={{ border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}>
+      <div className="relative w-full max-w-4xl flex flex-col" style={{ backgroundColor: "var(--dark-card)", border: "1px solid rgba(201,168,76,0.2)", maxHeight: "90vh" }} onClick={(e) => e.stopPropagation()}>
+        <button onClick={closeModal} className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center transition-colors" style={{ border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)", backgroundColor: "var(--dark-card)" }}>
           <Icon name="X" size={18} />
         </button>
 
-        <div className="relative" style={{ height: "420px" }}>
+        <div className="relative flex-shrink-0" style={{ height: "420px", overflow: "hidden" }}>
           {modal.showVideo && modal.item.video ? (
             <iframe src={modal.item.video} className="w-full h-full" allow="autoplay; encrypted-media; fullscreen" allowFullScreen frameBorder="0" />
           ) : (
@@ -191,7 +191,7 @@ export function CatalogModal({ modal, setModal, closeModal }: CatalogModalProps)
           </div>
         )}
 
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto">
           {modal.item.tag && (
             <span className="inline-block font-body text-xs tracking-[0.15em] uppercase px-3 py-1 mb-4" style={{ backgroundColor: "var(--gold)", color: "var(--dark)" }}>{modal.item.tag}</span>
           )}
