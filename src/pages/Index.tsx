@@ -28,6 +28,7 @@ const services = [
 
 const projects = [
   { title: "Стол «Элегия»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/254050d2-95ca-4817-af94-f574cb8b9383.jpg", style: "Современная", desc: "" },
+  { title: "Стол «Мелодия лофта»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6842dff2-3ab3-4b93-b3d8-f3baf607a639.png", style: "Лофт", desc: "" },
 ];
 
 function useScrollAnimation() {
