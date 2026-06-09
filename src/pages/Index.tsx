@@ -132,9 +132,9 @@ export default function Index() {
               Авторская мебель · Бузулук · С 2000 года
             </p>
             <h1 className="font-display text-6xl md:text-8xl font-light leading-[0.9] mb-8" style={{ animation: "fadeInUp 0.8s 0.4s both" }}>
-              Мебель,<br />
-              <em className="italic">с которой</em><br />
-              мечты сбываются
+              Столы,<br />
+              <em className="italic">создающие</em><br />
+              уют
             </h1>
             <p className="font-body text-sm leading-relaxed mb-10 max-w-md" style={{ color: "rgba(240,232,213,0.7)", animation: "fadeInUp 0.8s 0.6s both" }}>
               Каждое изделие — результат диалога между заказчиком и мастером. Мы создаём мебель, которая живёт в интерьере как произведение искусства.
