@@ -154,11 +154,11 @@ export function CatalogModal({ modal, setModal, closeModal }: CatalogModalProps)
           <Icon name="X" size={18} />
         </button>
 
-        <div className="relative flex-shrink-0" style={{ height: "420px", overflow: "hidden" }}>
+        <div className="relative flex-shrink-0" style={{ height: "420px", overflow: "hidden", backgroundColor: "#000" }}>
           {modal.showVideo && modal.item.video ? (
             <iframe src={modal.item.video} className="w-full h-full" allow="autoplay; encrypted-media; fullscreen" allowFullScreen frameBorder="0" />
           ) : (
-            <img key={modal.photoIndex} src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
+            <img key={`photo-${modal.item.id}-${modal.photoIndex}`} src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full" style={{ objectFit: "contain" }} />
           )}
           {!modal.showVideo && modal.item.images.length > 1 && (
             <>
