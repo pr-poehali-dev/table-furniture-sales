@@ -26,15 +26,7 @@ const services = [
   { icon: "CreditCard", title: "Рассрочка", desc: "Ремонт несёт с собой большие траты. Это часто приводит к тому, что переезд затягивается. Зная это, мы добавили возможность покупки в рассрочку на 3 месяца без процентов и переплат.", price: "0% на 3 месяца", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/9b5dc2fb-3371-4c40-8493-e58359bc17e2.jpg" },
 ];
 
-const projects = [
-  { title: "Классическая кухня «Прованс»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/63de36b2-46c7-4759-8793-f64e7a1544aa.jpg", style: "Прованс", desc: "" },
-  { title: "Классическая кухня «Нике Авория»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/dbcb4b78-b2d3-4b00-9b74-537b93dab3f8.jpg", style: "Классика", desc: "" },
-  { title: "Современная кухня «Окси»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/442670dc-5080-4b64-a289-b4e73da28baa.png", style: "Современная", desc: "" },
-  { title: "Современная кухня «Модерн Стайл»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b9d51ceb-c7be-4a04-a20d-a5b299e35175.jpg", style: "Современная", desc: "" },
-  { title: "Современная кухня «Василиса»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/27b7d3b8-80c8-4a93-9ac6-d2758034fb58.jpg", style: "Современная", desc: "" },
-  { title: "Классическая кухня «Нике Авория — 2»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/653857d1-4282-4b39-9970-8e2d2cdd992c.jpg", style: "Классика", desc: "" },
-  { title: "Буфет классический «Юнона»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/77e1eafa-0fcc-470f-aada-f9da4ffad8e5.jpg", style: "Классика", desc: "" },
-];
+const projects: { title: string; location: string; area: string; image: string; style: string; desc: string }[] = [];
 
 function useScrollAnimation() {
   const ref = useRef<HTMLDivElement>(null);
