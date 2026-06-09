@@ -64,6 +64,7 @@ export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState<{ item: CatalogItem; photoIndex: number; showVideo: boolean } | null>(null);
   const [articleModal, setArticleModal] = useState<Article | null>(null);
+  const [projectPhoto, setProjectPhoto] = useState<{ image: string; title: string } | null>(null);
 
   const openModal = useCallback((item: CatalogItem, photoIndex = 0) => {
     setModal({ item, photoIndex, showVideo: false });
@@ -299,7 +300,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.map((p) => (
               <AnimatedSection key={p.title}>
-                <div className="luxury-card group cursor-pointer overflow-hidden relative" style={{ height: "480px" }}>
+                <div className="luxury-card group cursor-pointer overflow-hidden relative" style={{ height: "480px" }} onClick={() => setProjectPhoto({ image: p.image, title: p.title })}>
                   <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,12,8,0.95) 0%, transparent 55%)" }} />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -314,6 +315,16 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {projectPhoto && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ backgroundColor: "rgba(0,0,0,0.92)" }} onClick={() => setProjectPhoto(null)}>
+          <button className="absolute top-6 right-6 text-white opacity-70 hover:opacity-100 transition-opacity" onClick={() => setProjectPhoto(null)}>
+            <Icon name="X" size={32} />
+          </button>
+          <img src={projectPhoto.image} alt={projectPhoto.title} className="max-w-full max-h-[90vh] object-contain rounded" onClick={e => e.stopPropagation()} />
+          <p className="absolute bottom-6 left-0 right-0 text-center font-display text-lg font-light" style={{ color: "var(--gold)" }}>{projectPhoto.title}</p>
+        </div>
+      )}
 
       <BlogSection onOpenArticle={setArticleModal} />
 
