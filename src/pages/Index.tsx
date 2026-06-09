@@ -31,11 +31,9 @@ const projects = [
   { title: "Классическая кухня «Нике Авория»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/dbcb4b78-b2d3-4b00-9b74-537b93dab3f8.jpg", style: "Классика", desc: "" },
   { title: "Современная кухня «Окси»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/442670dc-5080-4b64-a289-b4e73da28baa.png", style: "Современная", desc: "" },
   { title: "Современная кухня «Модерн Стайл»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b9d51ceb-c7be-4a04-a20d-a5b299e35175.jpg", style: "Современная", desc: "" },
-  { title: "Мебель для детей и подростков", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/2c0b3b01-dceb-4352-97f3-88299b53a1de.jpg", style: "Детская", desc: "" },
   { title: "Современная кухня «Василиса»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/27b7d3b8-80c8-4a93-9ac6-d2758034fb58.jpg", style: "Современная", desc: "" },
   { title: "Классическая кухня «Нике Авория — 2»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/653857d1-4282-4b39-9970-8e2d2cdd992c.jpg", style: "Классика", desc: "" },
   { title: "Буфет классический «Юнона»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/77e1eafa-0fcc-470f-aada-f9da4ffad8e5.jpg", style: "Классика", desc: "" },
-  { title: "Шкаф классический «Серафима»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/66aebc40-0710-4cfe-b1e6-0a078d024808.jpg", style: "Классика", desc: "" },
 ];
 
 function useScrollAnimation() {
