@@ -256,6 +256,23 @@ export default function Index() {
           </AnimatedSection>
 
           <MaterialCards />
+
+          <AnimatedSection>
+            <div className="mt-16 text-center">
+              <p className="font-body text-sm mb-6" style={{ color: "rgba(240,232,213,0.6)" }}>
+                Не знаете, какой материал подойдёт для вашего проекта? Мы поможем выбрать.
+              </p>
+              <button
+                onClick={() => scrollTo("contacts")}
+                className="font-body text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300"
+                style={{ border: "1px solid var(--gold)", color: "var(--dark)", backgroundColor: "var(--gold)" }}
+                onMouseEnter={e => { const b = e.target as HTMLButtonElement; b.style.backgroundColor = "transparent"; b.style.color = "var(--gold)"; }}
+                onMouseLeave={e => { const b = e.target as HTMLButtonElement; b.style.backgroundColor = "var(--gold)"; b.style.color = "var(--dark)"; }}
+              >
+                Получить консультацию по материалам
+              </button>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
