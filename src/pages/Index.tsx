@@ -1,4 +1,66 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+
+const materialData = [
+  {
+    icon: "Trees",
+    title: "Натуральные породы дерева",
+    short: "Используем массив дуба, ясеня, карагача, берёзы, липы. Каждая доска тщательно отбирается вручную — только однородная текстура, без сучков и дефектов.",
+    items: ["Дуб — прочность и благородство текстуры", "Ясень — лёгкость и выразительный рисунок", "Карагач — тёплый тон, элитный сегмент", "Берёза — доступность и природный аромат", "Липа — эстетичность и отсутствие аллергенных смол"],
+    details: "Натуральное дерево — это живой материал с уникальной текстурой, который становится красивее с годами. Мы работаем только с сертифицированной древесиной из контролируемых источников. Каждая заготовка проходит камерную сушку до 8–12% влажности — это гарантирует, что мебель не поведёт и не треснет со временем. Массив дуба выдерживает нагрузки в 10–15 лет интенсивной эксплуатации без потери формы. Карагач и ясень — материалы элитного сегмента, редкие в производстве и высоко ценимые за выразительный рисунок. Берёза и липа — экономичные альтернативы с отличными физическими свойствами для детской и спальной мебели.",
+  },
+  {
+    icon: "Layers",
+    title: "МДФ",
+    short: "МДФ — современный плитный материал высокой плотности. Отлично подходит для фасадов, декоративных элементов и корпусной мебели. Идеальная поверхность под покраску и шпон.",
+    items: ["Однородная структура без деформаций", "Гладкая поверхность — идеально под покраску", "Устойчивость к влаге (влагостойкий МДФ)", "Доступная цена при высоком качестве"],
+    details: "МДФ (Medium Density Fiberboard) — это прессованная древесноволокнистая плита плотностью 700–800 кг/м³. Благодаря однородной структуре материал отлично фрезеруется, позволяя создавать сложные фигурные фасады, радиусные углы и декоративные рельефы. Поверхность МДФ не имеет пор, поэтому краска ложится идеально гладко — без шлифовки между слоями. Мы используем влагостойкий МДФ для кухонных фасадов и мебели в ванных комнатах. Экологический класс эмиссии E1 — безопасен для жилых помещений и детских комнат. Толщина плит: 16, 18, 19, 22 мм — под любую задачу.",
+  },
+  {
+    icon: "PanelTop",
+    title: "ЛДСП премиум-класса Ламарти",
+    short: "Ламинированная древесностружечная плита премиум-класса с трёхслойной структурой и плотностью, приближенной к МДФ.",
+    items: ["Экологичность — ламинированная плита премиум-класса", "Качество — трёхслойные, плотность близка к МДФ", "Эстетичность — различные варианты структур и тиснений"],
+    details: "Ламарти — это ЛДСП европейского производства, которое принципиально отличается от дешёвых аналогов. Трёхслойная структура: мелкодисперсный наполнитель в центре и плотные слои снаружи — обеспечивает плотность 680–720 кг/м³, что сопоставимо с МДФ. Ламинирующее покрытие толщиной 0,4–0,6 мм наносится под давлением — оно не отслаивается и устойчиво к царапинам. Палитра: более 200 декоров, включая имитации дерева, камня, ткани и однотонные матовые цвета. Класс эмиссии E1 (формальдегид < 8 мг/100 г). Идеально для корпусной мебели, гардеробных систем и мебели для офиса.",
+  },
+];
+
+function MaterialCards() {
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {materialData.map((mat, idx) => (
+        <div key={mat.title} className="p-10 flex flex-col" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
+          <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
+            <Icon name={mat.icon} size={22} style={{ color: "var(--gold)" }} />
+          </div>
+          <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>{mat.title}</h3>
+          <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>{mat.short}</p>
+          <ul className="flex flex-col gap-3 mb-6">
+            {mat.items.map((item) => (
+              <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
+                <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <button
+            onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
+            className="mt-auto flex items-center gap-2 font-body text-xs tracking-[0.15em] uppercase transition-colors duration-200"
+            style={{ color: "var(--gold)" }}
+          >
+            {openIdx === idx ? "Скрыть" : "Подробнее"}
+            <Icon name={openIdx === idx ? "ChevronUp" : "ChevronDown"} size={14} style={{ color: "var(--gold)" }} />
+          </button>
+          {openIdx === idx && (
+            <div className="mt-5 pt-5 font-body text-sm leading-relaxed" style={{ borderTop: "1px solid rgba(201,168,76,0.2)", color: "rgba(240,232,213,0.75)" }}>
+              {mat.details}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 import Icon from "@/components/ui/icon";
 import Navbar from "@/components/Navbar";
 import CatalogSection, { CatalogModal, catalogItems, type CatalogItem } from "@/components/CatalogSection";
@@ -185,67 +247,7 @@ export default function Index() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <AnimatedSection>
-              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
-                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
-                  <Icon name="Trees" size={22} style={{ color: "var(--gold)" }} />
-                </div>
-                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>Натуральные породы дерева</h3>
-                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
-                  Используем массив дуба, ясеня, карагача, берёзы, липы. Каждая доска тщательно отбирается вручную — только однородная текстура, без сучков и дефектов.
-                </p>
-                <ul className="flex flex-col gap-3">
-                  {["Дуб — прочность и благородство текстуры", "Ясень — лёгкость и выразительный рисунок", "Карагач — тёплый тон, элитный сегмент", "Берёза — доступность и природный аромат", "Липа — эстетичность и отсутствие аллергенных смол"].map((item) => (
-                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
-                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
-                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
-                  <Icon name="Layers" size={22} style={{ color: "var(--gold)" }} />
-                </div>
-                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>МДФ</h3>
-                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
-                  МДФ — современный плитный материал высокой плотности. Отлично подходит для фасадов, декоративных элементов и корпусной мебели. Идеальная поверхность под покраску и шпон.
-                </p>
-                <ul className="flex flex-col gap-3">
-                  {["Однородная структура без деформаций", "Гладкая поверхность — идеально под покраску", "Устойчивость к влаге (влагостойкий МДФ)", "Доступная цена при высоком качестве"].map((item) => (
-                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
-                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="p-10 h-full" style={{ border: "1px solid rgba(201,168,76,0.2)", backgroundColor: "var(--dark-card)" }}>
-                <div className="w-12 h-12 flex items-center justify-center mb-6" style={{ backgroundColor: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)" }}>
-                  <Icon name="PanelTop" size={22} style={{ color: "var(--gold)" }} />
-                </div>
-                <h3 className="font-display text-3xl font-light mb-4" style={{ color: "var(--gold)" }}>ЛДСП премиум-класса Ламарти</h3>
-                <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(240,232,213,0.65)" }}>
-                  Ламинированная древесностружечная плита премиум-класса с трёхслойной структурой и плотностью, приближенной к МДФ.
-                </p>
-                <ul className="flex flex-col gap-3">
-                  {["Экологичность — ламинированная плита премиум-класса", "Качество — трёхслойные, плотность близка к МДФ", "Эстетичность — различные варианты структур и тиснений"].map((item) => (
-                    <li key={item} className="flex items-start gap-3 font-body text-sm" style={{ color: "rgba(240,232,213,0.75)" }}>
-                      <span style={{ color: "var(--gold)", marginTop: "2px", flexShrink: 0 }}>—</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-          </div>
+          <MaterialCards />
         </div>
       </section>
 

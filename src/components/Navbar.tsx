@@ -2,6 +2,7 @@ import Icon from "@/components/ui/icon";
 
 const navItems = [
   { label: "Главная", section: "hero" },
+  { label: "Материалы", section: "materials" },
   { label: "Каталог", section: "catalog" },
   { label: "Услуги", section: "services" },
   { label: "Проекты", section: "projects" },
