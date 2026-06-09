@@ -158,7 +158,7 @@ export function CatalogModal({ modal, setModal, closeModal }: CatalogModalProps)
           {modal.showVideo && modal.item.video ? (
             <iframe src={modal.item.video} className="w-full h-full" allow="autoplay; encrypted-media; fullscreen" allowFullScreen frameBorder="0" />
           ) : (
-            <img src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
+            <img key={modal.photoIndex} src={modal.item.images[modal.photoIndex]} alt={modal.item.name} className="w-full h-full object-cover" />
           )}
           {!modal.showVideo && modal.item.images.length > 1 && (
             <>
