@@ -137,7 +137,7 @@ export default function Index() {
               уют
             </h1>
             <p className="font-body text-sm leading-relaxed mb-10 max-w-md" style={{ color: "rgba(240,232,213,0.7)", animation: "fadeInUp 0.8s 0.6s both" }}>
-              Каждое изделие — результат диалога между заказчиком и мастером. Мы создаём мебель, которая живёт в интерьере как произведение искусства.
+              Каждый стол — результат диалога между заказчиком и мастером. Создаём столы, которые добавляют в интерьер нотки комфорта и эксклюзива.
             </p>
             <div className="flex gap-4 flex-wrap" style={{ animation: "fadeInUp 0.8s 0.8s both" }}>
               <button
