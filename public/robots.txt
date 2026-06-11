@@ -16,4 +16,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://ecodrev.poehali.dev/sitemap.xml
+Sitemap: https://экодревмебель.рф/sitemap.xml
