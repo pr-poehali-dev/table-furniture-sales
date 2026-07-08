@@ -102,7 +102,7 @@ const projects = [
   { title: "Журнальный столик «Юнона»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b4b74c5c-91cd-447b-95ae-6b7e667c13d6.jpg", style: "Классика", desc: "" },
   { title: "Стол «Архитектоника»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/ae6cb983-971e-47cb-ac97-2c89c148819a.jpg", style: "Лофт", desc: "" },
   { title: "Стол классический «Серафима»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/78394aa7-6416-4b2b-9e04-63c5f85e87eb.jpg", style: "Классика", desc: "" },
-  { title: "Современный стол", location: "", area: "", image: "", style: "Современная", desc: "" },
+  { title: "Современный стол", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/1288067e-b2b9-42fc-952c-06db2036f221.jpg", style: "Современная", desc: "" },
 ];
 
 function useScrollAnimation() {
