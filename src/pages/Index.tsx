@@ -113,6 +113,7 @@ const services = [
 ];
 
 const projects = [
+  { title: "Стол «Волна»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/e1bcfbf8-63f1-49aa-8589-83c8b8ffd7cb.jpg", style: "Современная", desc: "" },
   { title: "Стол «Элегия»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/254050d2-95ca-4817-af94-f574cb8b9383.jpg", style: "Современная", desc: "" },
   { title: "Стол «Мелодия лофта»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/6842dff2-3ab3-4b93-b3d8-f3baf607a639.png", style: "Лофт", desc: "" },
   { title: "Журнальный столик «Юнона»", location: "", area: "", image: "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/b4b74c5c-91cd-447b-95ae-6b7e667c13d6.jpg", style: "Классика", desc: "" },
