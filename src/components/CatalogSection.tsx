@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
+import CardContactButtons from "@/components/CardContactButtons";
 
 const LISTOPAD_1 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/444a5ae2-28fc-422d-823a-100854a7e6b9.jpg";
 const LISTOPAD_2 = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/bucket/316772d9-0d51-458a-a831-d5fa38fbafc8.jpg";
@@ -127,6 +128,7 @@ export default function CatalogSection({ onOpenModal }: CatalogSectionProps) {
                       {item.images.length > 1 ? `${item.images.length} фото` : "Подробнее"} <Icon name="ArrowRight" size={13} />
                     </span>
                   </div>
+                  <CardContactButtons />
                 </div>
               </div>
             </AnimatedSection>
