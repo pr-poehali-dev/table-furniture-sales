@@ -12,7 +12,7 @@ import NotFound from "@/pages/NotFound";
 const TITLE = "ЭкоДрев — авторские столы, столики Бузулук";
 const DESCRIPTION =
     "ЭкоДрев -  обеденные  столы журнальные столики кофейные столики детские столы. Круглые  прямоугольные квадратные нестандартные.Мебель для ресторанов. ";
-const OG_IMAGE = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/og-image-1780986326602.jpg";
+const OG_IMAGE = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/f0817493-8a80-4c5e-95ab-d865ef2455a8.jpg";
 const SITE_URL = "https://экодревмебель.рф/";
 const FAVICON = "https://cdn.poehali.dev/projects/3a8fea8d-927a-442f-af67-1e18e9992c4a/files/favicon-1788340800565.jpg";
 
@@ -50,8 +50,8 @@ export const Route = createRootRoute({
             {property: "og:title", content: TITLE},
             {property: "og:description", content: DESCRIPTION},
             {property: "og:image", content: OG_IMAGE},
-            {property: "og:image:width", content: "4800"},
-            {property: "og:image:height", content: "2520"},
+            {property: "og:image:width", content: "1360"},
+            {property: "og:image:height", content: "768"},
             {property: "og:image:alt", content: "ЭкоДрев — авторская мебель из дерева в Бузулуке"},
             {property: "og:locale", content: "ru_RU"},
             {property: "og:site_name", content: "ЭкоДрев"},
