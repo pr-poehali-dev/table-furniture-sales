@@ -144,7 +144,16 @@ export default function ContactsSection() {
       <footer className="py-10" style={{ backgroundColor: "var(--dark)", borderTop: "1px solid rgba(201,168,76,0.15)" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-xl tracking-[0.15em]" style={{ color: "var(--gold)" }}>ЭкоДрев</div>
-          <p className="font-body text-xs" style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев, Бузулук. Все права защищены.</p>
+          <div className="flex flex-col items-center gap-2 font-body text-xs text-center" style={{ color: "rgba(240,232,213,0.5)" }}>
+            <span>г. Бузулук, ул. Суворова, 64, ТЦ «Сигнал»</span>
+            <span>
+              <a href="tel:+79228070017" className="hover:underline">8-922-807-00-17</a>
+              {" · "}
+              <a href="tel:+79225470521" className="hover:underline">8-922-547-05-21</a>
+            </span>
+            <a href="mailto:decabrina_sveta@mail.ru" className="hover:underline">decabrina_sveta@mail.ru</a>
+            <span style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев, Бузулук. Все права защищены.</span>
+          </div>
           <div className="flex items-center gap-6">
             <a href="https://vk.com/ekodrevbuzuluk" target="_blank" rel="noopener noreferrer"
               className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
