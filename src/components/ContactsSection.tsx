@@ -155,18 +155,12 @@ export default function ContactsSection() {
             <span style={{ color: "rgba(240,232,213,0.3)" }}>© 2026 ЭкоДрев, Бузулук. Все права защищены.</span>
           </div>
           <div className="flex items-center gap-6">
-            <a href="https://vk.com/ekodrevbuzuluk" target="_blank" rel="noopener noreferrer"
-              className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
-              style={{ color: "rgba(240,232,213,0.4)" }}
-              onMouseEnter={e => (e.target as HTMLAnchorElement).style.color = "var(--gold)"}
-              onMouseLeave={e => (e.target as HTMLAnchorElement).style.color = "rgba(240,232,213,0.4)"}
-            >ВКонтакте</a>
             <a href="https://vk.ru/ekodrevmebelbuzuluk" target="_blank" rel="noopener noreferrer"
               className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
               style={{ color: "rgba(240,232,213,0.4)" }}
               onMouseEnter={e => (e.target as HTMLAnchorElement).style.color = "var(--gold)"}
               onMouseLeave={e => (e.target as HTMLAnchorElement).style.color = "rgba(240,232,213,0.4)"}
-            >ВКонтакте (мебель)</a>
+            >ВКонтакте</a>
             <a href="https://ru.pinterest.com/decabrina_sveta/?actingBusinessId=1094726759330777519" target="_blank" rel="noopener noreferrer"
               className="font-body text-xs tracking-[0.1em] uppercase transition-colors duration-200"
               style={{ color: "rgba(240,232,213,0.4)" }}
